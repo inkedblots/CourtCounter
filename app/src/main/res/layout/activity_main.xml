@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundmateriallight"
-    tools:ignore="HardcodedText">
+    tools:context="com.example.android.courtcounter.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,34 +15,23 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            tools:context="com.example.android.courtcounter.MainActivity"
-            tools:ignore="HardcodedText">
+            android:orientation="vertical">
 
             <!--Player 1 Starts here-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/shadowsintolight"
-                android:gravity="center_horizontal"
-                android:padding="12dp"
                 android:text="@string/text_team1"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="UnusedAttribute" />
+                tools:targetApi="jelly_bean"
+                style="@style/Team1" />
 
             <TextView
                 android:id="@+id/team_1_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center_horizontal"
-                android:paddingBottom="20dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp"
-                tools:ignore="InconsistentLayout,UnusedAttribute" />
+                android:text="@string/textTeam1Score"
+                tools:targetApi="jelly_bean"
+                style="@style/Team1score" />
 
 
             <!--Player 1 Scoring buttons -->
@@ -51,43 +40,28 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
+                android:orientation="vertical">
 
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape"
                     android:onClick="addThreeForTeam1"
-                    android:text="@string/addThreeForTeam1" />
+                    android:text="@string/addThreeForTeam1"
+                    style="@style/Team1addThree" />
 
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape"
                     android:onClick="addTwoForTeam1"
                     android:text="@string/addTwoPointTeam1"
-                    android:textAllCaps="false" />
+                    style="@style/Team1addTwo" />
 
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape"
                     android:onClick="addOneForTeam1"
                     android:text="@string/addFreeThrowTeam1"
-                    android:textAllCaps="false" />
+                    style="@style/Team1addFree" />
             </LinearLayout>
 
         </LinearLayout>
@@ -110,27 +84,17 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/shadowsintolight"
-                android:gravity="center_horizontal"
-                android:padding="12dp"
                 android:text="@string/text_team2"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="UnusedAttribute" />
+                tools:ignore="UnusedAttribute"
+                style="@style/Team2" />
 
             <TextView
                 android:id="@+id/team_2_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center_horizontal"
-                android:paddingBottom="20dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp"
-                tools:ignore="InconsistentLayout,UnusedAttribute" />
-
+                android:text="@string/textTeam2Score"
+                tools:ignore="InconsistentLayout,UnusedAttribute"
+                style="@style/Team2Score" />
 
             <!--Scoring buttons Player 2 -->
             <LinearLayout
@@ -138,44 +102,28 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
+                android:orientation="vertical">
 
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape"
                     android:onClick="addThreeForTeam2"
-                    android:text="@string/addThreePointTeam2" />
+                    android:text="@string/addThreePointTeam2"
+                    style="@style/Team2addThree" />
 
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape"
                     android:onClick="addTwoForTeam2"
                     android:text="@string/addTwoPointTeam2"
-                    android:textAllCaps="false" />
+                    style="@style/Team2addTwo" />
 
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape"
                     android:onClick="addOneForTeam2"
                     android:text="@string/addFreeThrowTeam2"
-                    android:textAllCaps="false" />
-
+                    style="@style/Team2Free" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -183,10 +131,7 @@
     <Button
         android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
-        android:background="@drawable/shape"
         android:onClick="resetScore"
-        android:text="@string/btn_reset" />
+        android:text="@string/btn_reset"
+        style="@style/Reset" />
 </RelativeLayout>

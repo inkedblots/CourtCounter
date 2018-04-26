@@ -4,19 +4,18 @@
     
     <!-- Team 1 information -->
     <string name="text_team1">Team 1</string>
+    <string name="textTeam1Score">0</string>
     <string name="addThreeForTeam1">+3 Points</string>
     <string name="addTwoPointTeam1">+2 Points</string>
     <string name="addFreeThrowTeam1">Free Throw</string>
 
-
     <!-- Team 2 information -->
     <string name="text_team2">Team 2</string>
+    <string name="textTeam2Score">0</string>
     <string name="addThreePointTeam2">+3 Points</string>
     <string name="addTwoPointTeam2">+2 Points</string>
     <string name="addFreeThrowTeam2">Free Throw</string>
 
-
+    <!--Reset Button-->
     <string name="btn_reset">Reset</string>
-
-
 </resources>
